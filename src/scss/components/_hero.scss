@@ -1,0 +1,16 @@
+.hero {
+	padding-top: 15vw;
+	padding-bottom:15vw;
+	background: grey(lightest);
+	position: relative;
+	&__logo {
+		display: block;
+		width: 100%;
+		max-width: 600px;
+		margin: auto;
+	}
+	// modifiers
+	&--blue {
+		background: $primary;
+	}
+}

@@ -1,0 +1,51 @@
+// Variables
+
+$darkprimary: #093c61;
+$primary: #3870c4;
+$black: rgba(0,0,0,1);
+$normalgrey: #e8e9ea;
+$lightgrey: #eeeeee;
+$lightestgrey: #edf1f5;
+$darkgrey: #808080;
+$darkestgrey: #292b2c;
+$secondaryblue: #03a9f4;
+$secondaryyellow: #ff9700;
+$secondaryred: #e6292c;
+
+
+$grey: (
+	lightest: $lightestgrey,
+	light: $lightgrey,
+	normal: $normalgrey,
+	dark: $darkgrey,
+	darkest: $darkestgrey
+);
+
+
+@function grey($shade) { // use lightest, light, normal, dark, or darkest for value of $shade
+	@return map-get($grey, $shade);
+}
+
+// For the homies who spell differently
+@function gray($shade) {
+	@return map-get($grey, $shade);
+}
+
+@mixin gradient {
+	background: $primary;
+	background: linear-gradient(to right, $darkprimary, $primary);
+}
+
+$gridWidth: 900px;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+$font: 'Lato';
+
+$base-font-size: 2em;
+
+//weights
+
+$bold: 900;
+$semibold: 700;
+$normal: 400;
+$light:300;

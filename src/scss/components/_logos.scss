@@ -1,0 +1,14 @@
+.logos {
+	&__row {
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&__item {
+		width: 100%;
+		display: inline-block;
+		max-width: 200px;
+		margin: 3rem;
+	}
+}

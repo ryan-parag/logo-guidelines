@@ -1,0 +1,26 @@
+.draft-img {
+	height: 500px;
+	background-size:contain;
+	background-repeat: no-repeat;
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+	background-color: white;
+	&--1 {
+		background-image: url(../images/drafts.png);
+		background-color: white;
+		background-position: right center;
+	}
+	&--2 {
+		background-image: url(../images/dl_logo_grid.png);
+		background-color: white;
+		background-position: center;
+	}
+		&--3 {
+		background-image: url(../images/maintenance@x2.gif);
+		background-color: white;
+		background-position: center;
+	}
+	@media screen and (max-width: 600px) {
+		background-size: cover;
+	}
+}
